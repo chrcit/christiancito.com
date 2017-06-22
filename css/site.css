@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+
+/* HEADER */
+
+.site-header {
+  border-bottom: 1px dotted #222;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.site-header .site-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* Article */
+
+.site-content {
+  margin: 2em auto;
+  padding: 0 5%;
+  width: 60%;
+}
+
+.post {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.post-title {
+  font-size: 2em;
+  margin: .25em 0;
+  text-align: center;
+}
+
+.post-excerpt-title {
+  text-align: left;
+}
+
+.post-content {
+  line-height: 1.5em;
+}
+
+/* FOOTER */
+
+.site-footer {
+  border-top: 1px dotted #222;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.social-links {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.social-link {
+  display: inline;
+}
+
+.social-link:last-child:after {
+  content: "";
+}
+
+.social-link:after {
+  content: " |";
+}
+
+.social-link a {
+  text-decoration: underline;
+}
+
+.site-links {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.site-colophon {
+  border-right: 1px solid #222;
+  padding-right: .5em;
+}
+
+.site-version {
+  padding-left: .5em;
+}
+
+/* Index */
+
+.index-cols {
+
+}
+
+.index-col {
+  width: 100%;
+}
+
+.index-col ul {
+  margin: 0;
+}
+
+.index-col li {
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .site-header,
+  .site-content,
+  .site-footer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .site-header,
+  .site-content,
+  .site-footer {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  .site-header,
+  .site-content,
+  .site-footer {
+    width: 90%;
+  }
+
+  .social-link {
+    padding: .25em 0;
+    display: block;
+  }
+
+  .social-link:after {
+    content: "";
+  }
+}
