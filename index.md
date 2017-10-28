@@ -6,7 +6,7 @@ layout: index
 <ul class="site-list">
   <li>Web Devloper</li>
   <li>Student at <a href="http://www.informatik.tuwien.ac.at">TU Vienna</a></li>
-  <li><a href="{{ site.url }}/reading">Avid reader</a></li>
+  <li><a href="{{ site.url }}/readinglist">Avid reader</a></li>
   <li><a href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
   <li><a href="mailto:citochris@gmail.com">citochris@gmail.com</a></li>
 </ul>
