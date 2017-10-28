@@ -1,41 +1,15 @@
 ---
-layout: default
+layout: index
 ---
 
+<h1 class="site-title"><a href="{{ site.url }}">Christian Cito</a></h1>
+<ul class="site-list">
+  <li>Web Devloper</li>
+  <li>Student at <a href="http://www.informatik.tuwien.ac.at">TU Vienna</a></li>
+  <li><a href="{{ site.url }}/reading">Avid reader</a></li>
+  <li><a href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
+  <li><a href="mailto:citochris@gmail.com">citochris@gmail.com</a></li>
+</ul>
 
-<div class="index-cols clearfix">
-  <div class='index-col'>
-    <h1>Reviews & Summaries</h1>
-    <ul class="clearfix">
-    {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-  </div>
-  <div class='index-col'>
-    <h1>Essays</h1>
-    <ul class="clearfix">
-    {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-  </div>
-  <div class='index-col'>
-    <h1>Case Studies</h1>
-    <ul class="clearfix">
-    {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-  </div>
-</div>
-
-<!--
-You can use HTML elements in Markdown, such as the comment element, and they won't be affected by a markdown parser. However, if you create an HTML element in your markdown file, you cannot use markdown syntax within that element's contents.
--->
+**Current obessions:**<br>
+Blockchain Technology, Cryptocurrencies, Psychology, Nietzsche, Fasting, Meditation.

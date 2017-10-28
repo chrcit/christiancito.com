@@ -1,2 +1,1 @@
-# christiancito.com
-Personal Site
+# Personal Site
