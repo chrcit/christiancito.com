@@ -46,7 +46,7 @@ li {
 
 .site-index {
   background: #fff;
-  padding: 2.5em;
+  padding: .5em;
   position: absolute;
   z-index: 2;
   top:50%;
@@ -60,7 +60,7 @@ li {
 .post-title,
 .site-title {
   color: #8B1717;
-  margin-top: 0;
+  margin: 0;
   font-size: 2.5em;
   text-align: center;
   width: 100%;

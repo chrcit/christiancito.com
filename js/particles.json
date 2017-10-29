@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 60,
+      "value": 40,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 400
       }
     },
     "color": {
@@ -31,8 +31,8 @@
       "anim": {
         "enable": true,
         "speed": 1,
-        "opacity_min": 0.5,
-        "sync": true
+        "opacity_min": 0.1,
+        "sync": false
       }
     },
     "size": {
@@ -49,7 +49,7 @@
       "enable": true,
       "distance": 100,
       "color": "#333",
-      "opacity": 0.4,
+      "opacity": 0.2,
       "width": 1
     },
     "move": {
@@ -71,7 +71,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
