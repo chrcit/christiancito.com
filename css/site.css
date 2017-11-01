@@ -30,13 +30,16 @@ li {
 
 /* Header */
 
+.site-footer,
 .site-header {
+  background-color: #ddd;
   margin: 0 auto;
   padding: 1em;
   text-align: center;
   width: 50%;
 }
 
+.site-footer,
 .site-header a {
   color: #800000;
   text-decoration: none;
@@ -95,7 +98,27 @@ li {
   z-index: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  .site-header,
+  .site-footer,
+  .site-content,
+  .site-index {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-header,
+  .site-footer,
+  .site-content,
+  .site-index {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 560px) {
+  .site-header,
+  .site-footer,
   .site-content,
   .site-index {
     width: 100%;
