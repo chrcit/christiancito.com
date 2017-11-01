@@ -2,7 +2,7 @@
 layout: article
 title:  "Zero To One by Peter Thiel"
 date:   2017-11-1 10:00:00
-permalink: /zero-to-one/
+permalink: /notes/zero-to-one/
 excerpt: ""
 ---
 
