@@ -98,6 +98,11 @@ li {
   z-index: 2;
 }
 
+blockquote {
+  font-size: .9em;
+  margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
   .site-header,
   .site-footer,
