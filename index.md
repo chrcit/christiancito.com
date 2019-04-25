@@ -10,6 +10,3 @@ layout: index
   <li><a href="https://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a></li>
   <li><a href="mailto:citochris@gmail.com">citochris@gmail.com</a></li>
 </ul>
-
-**Current obessions:**<br>
-Blockchain Technology, Cryptocurrencies, Complex Systems, Psychology, Nietzsche, Fasting, Meditation.
