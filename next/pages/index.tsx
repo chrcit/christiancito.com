@@ -1,23 +1,27 @@
 import { gql } from '@apollo/client'
+import Layout from 'components/Layout'
 import { client, Renderer } from 'lib/keystone'
 import type { GetStaticPropsContext, GetStaticPropsResult, NextPage } from 'next'
 import Link from 'next/link'
 
 const Home: NextPage = ({posts}: {posts: any}) => {
-  console.log(posts)
   return (<>
-    <div>
-      {posts.map((post: any) => (
-        <div key={post.id}>
-          <h1>
-            <Link href={`/${post.slug}`}>
-              <a>{post.title}</a>
-            </Link>
-          </h1>
-          <p>{post.tags.map((tag: any) => tag.name).join(', ')}</p>
-        </div>
-      ))}
-    </div>
+    <Layout>
+
+      <div>
+        {posts.map((post: any) => (
+          <div key={post.id}>
+            <h1>
+              <Link href={`/${post.slug}`}>
+                <a>{post.title}</a>
+              </Link>
+            </h1>
+            <p>{post.tags.map((tag: any) => tag.name).join(', ')}</p>
+          </div>
+        ))}
+      </div>
+
+    </Layout>
   </>)
 }
 

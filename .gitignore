@@ -1,24 +1,24 @@
-/keystone/node_modules
+node_modules
 /keystone/.keystone/admin
-/keystone/keystone.db
-/keystone/*.log
+keystone.db
+*.log
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-next/node_modules
-next/.pnp
-next/.pnp.js
+node_modules
+.pnp
+.pnp.js
 
 # testing
-next/coverage
+coverage
 
 # next.js
-/.next/
-/out/
+.next
+out
 
 # production
-/build
+build
 
 # misc
 .DS_Store

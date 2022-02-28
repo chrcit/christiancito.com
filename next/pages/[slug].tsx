@@ -1,13 +1,25 @@
 import { gql } from "@apollo/client";
+import Layout from "components/Layout";
 import { client, Renderer } from "lib/keystone";
 import { GetStaticPathsContext, GetStaticPathsResult, GetStaticProps, GetStaticPropsContext, GetStaticPropsResult } from "next";
 
 export default function PostPage({post}: {post: any}) {
-
     return (<>
-        <h1>Post Page</h1>
-        <Renderer document={post.content.document} />
-        <p>{post.tags.map((tag: any) => tag.name).join(', ')}</p>
+        <Layout>
+            <article className="flex flex-col">
+                <header>
+                    <h1 className="text-5xl">{post.title}</h1>
+                    <ul>
+                        {post.tags.map((tag: any) => (
+                            <li key={tag.id}>{tag.name}</li>
+                        ))}
+                    </ul>
+                </header>
+                <section>
+                    <Renderer document={post.content.document} />
+                </section>
+            </article>
+        </Layout>
     </>);
 }
 
@@ -44,6 +56,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext): Promise
                         document(hydrateRelationships: true)
                     }
                     tags {
+                        id
                         name
                     }
                 }
@@ -53,8 +66,6 @@ export async function getStaticProps({ params }: GetStaticPropsContext): Promise
             unique: {"slug": params?.slug}
         }
     });
-
-    console.log(result)
 
     return {
         props: {

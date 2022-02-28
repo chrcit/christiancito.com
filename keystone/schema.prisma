@@ -20,12 +20,12 @@ model User {
 
 model Post {
   id          String    @id @default(cuid())
+  publishDate DateTime?
   title       String    @default("")
   slug        String    @unique @default("")
   status      String?   @default("draft")
-  content     Json      @default("[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]}]")
-  publishDate DateTime?
   tags        Tag[]     @relation("Post_tags")
+  content     Json      @default("[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]}]")
 }
 
 model Tag {
