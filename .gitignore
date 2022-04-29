@@ -1,4 +1,10 @@
-_site
-.sass-cache
-.jekyll-metadata
-.DS_Store
+node_modules
+
+.cache
+.env
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
