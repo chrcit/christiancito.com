@@ -19,9 +19,8 @@
 
     <script>
       let clicked = 0;
-      console.log(document.querySelector('.site-index'))
       document.querySelector('.site-index').addEventListener('click', function(e) {
-        console.log(clicked)
+        console.log("Count: " + clicked)
         if (clicked === 0) {
           clicked++;
         } else if (clicked === 1) {
