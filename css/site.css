@@ -80,23 +80,24 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .site-list li span {
   flex: 1;
   text-decoration: none;
   font-size: 1.5em;
-  margin: 0 1em;
+  margin: 0 0.1em;
   text-align: right;
 }
 
-.site-list li a {
+.site-list li span + a {
   text-align: left;
   flex: 1;
   color: #8B1717;
   text-decoration: none;
   font-size: 1.5em;
-  margin: 0 1em;
+  margin: 0 0.1em;
 }
 
 /* Index Playground */
