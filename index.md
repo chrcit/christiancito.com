@@ -3,7 +3,7 @@ layout: index
 ---
 
 <h1 class="site-title"><a href="{{ site.url }}">christian cito</a></h1>
-<p>product engineer @&nbsp;<a target="_blank" href="https://bento.me">Bento</a></p>
+<p style="text-align:center; font-size: 1.5em">product engineer @&nbsp;<a target="_blank" href="https://bento.me">Bento</a></p>
 <ul class="site-list">
   <li><a target="_blank" href="https://bento.me/chrcit">bento.me/chrcit</a></li>
   <li class="username"><span>twitter:</span> <a target="_blank" href="https://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a></li>

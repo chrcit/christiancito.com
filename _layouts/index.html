@@ -33,8 +33,14 @@
 
             const targets = [,,,,,].map((_, i) => [Math.random() * window.innerWidth, Math.random() * window.innerHeight])
 
+            const canvas = document.querySelector("#site-playground canvas")
             for (target in targets) {
-              document.elementFromPoint(target[0], target[1]).click();
+              const clickEvent = new MouseEvent('click', {
+                view: window,
+                screenX: target[0],
+                screenY: target[1],
+              });
+              canvas.dispatchEvent(clickEvent);
             }
           }
         }
