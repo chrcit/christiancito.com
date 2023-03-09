@@ -77,12 +77,9 @@ li {
   margin: 0;
   font-size: 3.5em;
   font-weight: 400;
+  letter-spacing: 0ch;
   text-align: center;
   width: 100%;
-}
-
-.site-title strong {
-  font-weight: 600;
 }
 
 .site-list {
@@ -92,7 +89,7 @@ li {
   padding: 0;
 }
 
-.site-list li {
+.site-list li.username {
   display: flex;
   justify-content: center;
   align-items: center;
