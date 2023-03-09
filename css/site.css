@@ -53,7 +53,7 @@ li {
   z-index: 2;
   top:50%;
   left:50%;
-  background-color: rgba(255,255,255,255.90);
+  background-color: rgba(255,255,255,255, 0.9);
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -99,14 +99,14 @@ li {
   text-align: center;
 }
 
-.site-list li span {
+.site-list li.username span {
   flex: 1;
   text-decoration: none;
   margin: 0 0.1em;
   text-align: right;
 }
 
-.site-list li span + a {
+.site-list li.username span + a {
   text-align: left;
   flex: 1;
   color: #8B1717;
