@@ -57,6 +57,7 @@ li {
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+  border-radius: 12px;
   width: 50%;
 }
 
@@ -145,7 +146,7 @@ blockquote {
   .site-footer,
   .site-content,
   .site-index {
-    width: 70%;
+    width: 60%;
   }
 }
 
