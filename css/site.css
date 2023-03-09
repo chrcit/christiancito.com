@@ -48,7 +48,7 @@ li {
 /* Index */
 
 .site-index {
-  padding: 3em;
+  padding: 2em 4em;
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -57,11 +57,17 @@ li {
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  border-radius: 12px;
+  border-radius: 16px;
   /* super subtle box shadow */
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   overflow: hidden;
+  min-height: 0;
+  min-width: 0;
 }
+
+.site-index.is-active {
+  padding: 0;
+} 
 
 .site-index .content-wrapper {
   height: 100%;

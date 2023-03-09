@@ -30,6 +30,12 @@
             e.target.classList.remove('is-active')
           } else {
             e.target.classList.add('is-active')
+
+            const targets = [,,,,,].map((_, i) => [Math.random() * window.innerWidth, Math.random() * window.innerHeight])
+
+            for (target in targets) {
+              document.elementFromPoint(target[0], target[1]).click();
+            }
           }
         }
       })
