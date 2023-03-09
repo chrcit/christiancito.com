@@ -60,8 +60,6 @@ li {
   border-radius: 12px;
   /* super subtle box shadow */
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-
-  width: 50%;
 }
 
 .site-index .content-wrapper {
@@ -141,7 +139,7 @@ blockquote {
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .site-header,
   .site-footer,
   .site-content,
@@ -157,7 +155,7 @@ blockquote {
   .site-index {
     width: 80%;
   }
-}
+} */
 
 @media screen and (max-width: 560px) {
   .site-header,
