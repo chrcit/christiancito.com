@@ -61,6 +61,16 @@ li {
   width: 50%;
 }
 
+.site-index .content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.site-index.is-active .content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
 .post-title,
 .site-title {
   color: #8B1717;
